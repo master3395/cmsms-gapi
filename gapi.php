@@ -35,12 +35,12 @@ $gapi->start_index    = 1;
 # params
 ###############################################################################
 
-$gapi->ga_profile_id  = is_int($params['ga_profile_id']) ? $params['ga_profile_id'] : '';
+$gapi->ga_profile_id  = is_numeric($params['ga_profile_id']) ? $params['ga_profile_id'] : '';
 $gapi->ga_email       = isset($params['ga_email']) ? $params['ga_email'] : '';
-$gapi->max_results    = isset($params['max_results']) ? $params['max_results'] : 10;
+$gapi->max_results    = is_numeric($params['max_results']) ? $params['max_results'] : 10;
 
-$nocache              = is_int($params['nocache']) ? $params['nocache'] : 0;
-$cache_time           = isset($params['cache_time']) ? $params['cache_time'] : 28800;
+$nocache              = is_numeric($params['nocache']) ? $params['nocache'] : 0;
+$cache_time           = is_numeric($params['cache_time']) ? $params['cache_time'] : 28800;
 $cache_path           = isset($params['cache_path']) ? $params['cache_path'] : $config['root_path'].DIRECTORY_SEPARATOR.'tmp/cache';
 $cache_filename       = isset($params['cache_filename']) ? $params['cache_filename'] : 'gapi';
 
