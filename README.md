@@ -41,13 +41,12 @@ step 1) Under the root of your CMSMS installation create a directory $root_path/
 
 step 2) Register an Analytics application under Google Cloud Console
 
- * Before you can use this code you should register this application via Google Cloud Console
  * Please go to https://github.com/erebusnz/gapi-google-analytics-php-interface
    follow the steps in the bottom of this webpage
 
    In short:
 
- * Google Cloud Console (generate a key.p12 file): https://console.developers.google.com/
+ * Go to Google Cloud Console (generate a key.p12 file): https://console.developers.google.com/
    - Login to the developer console
    - Create or Open the project, go to APIs & Auth > Credentials
    - Click on Create new Client ID, and select Service account and P12 key.
