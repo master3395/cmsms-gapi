@@ -55,9 +55,8 @@ step 2) Register an Analytics application under Google Cloud Console
    - You can use credentials_test.php to test your key.p12 and ga_email settings,
      if configured ok you see your account settings and ga_profile_id.
 
-   - ! When having problems don't forget to add a new user account under www.google.com/analytics,
-       having read access and as emailaddress ga_email: XXXX@developer.gserviceaccount.com
-
+   - ! When having problems don't forget to add a new user account under www.google.com/analytics
+       (User Management Section), with read/analyse access and emailaddress ga_email: XXXX@developer.gserviceaccount.com
 
 step 3) Login to the /admin area of your website and add a User Defined Tag
         (Extensions -> User Defined Tags) with the name "gapi"
@@ -154,7 +153,7 @@ Security considerations
 
 ! Please be sure to password protect the directory you placed the *.php code and key.p12 in.
 
-This can be done with a .htacces file to be place in: $root_path/lib/gapi (eg. /home/www/yourwebsite/public/lib/gapi/)
+This can be done with a .htacces file to be placed in: $root_path/lib/gapi (eg. /home/www/yourwebsite/public/lib/gapi/)
 
 <pre>
 AuthType Basic
