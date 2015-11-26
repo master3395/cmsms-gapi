@@ -141,3 +141,19 @@ step 6) Print out the Smarty data
 </pre>
 
 == copy/paste end
+
+=====
+Security considerations
+=====
+
+! Please be sure to password protect the directory you placed the *.php code and key.p12 in.
+
+This can be done with a .htacces file to be place in: $root_path/lib/gapi (eg. /home/www/yourwebsite/public/lib/gapi/)
+
+<pre>
+AuthType Basic
+AuthName "protected"
+AuthUserFile "/home/www/yourwebsite/private/data/.htpasswd"
+
+require valid-user
+</pre>
