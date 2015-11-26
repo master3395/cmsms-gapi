@@ -63,7 +63,8 @@ Name: gapi
 Code:
 
  == copy/paste start
-<code>
+
+<pre>
 global $gCms;
 $config = cmsms()->GetConfig();
 
@@ -71,7 +72,8 @@ $root_path =  $config['root_path'];
 
 $include_class = "$root_path/lib/gapi/gapi.php";
 include($include_class);
-</code>
+</pre>
+
  == copy/paste end
 
 step 5) Call the gapi UDT by using the correct parameters:
@@ -107,7 +109,7 @@ step 6) Print out the Smarty data
 
  == copy/paste start
 
-<code>
+<pre>
   {$gapi|@print_r}
 
   {if isset($gapi[0]->visits) }
@@ -136,6 +138,6 @@ step 6) Print out the Smarty data
   {else}
      Gapi data unavailable!
   {/if}
-</code>
+</pre>
 
 == copy/paste end
