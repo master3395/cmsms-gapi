@@ -52,6 +52,12 @@ step 2) Register an Analytics application under Google Cloud Console
    - Click on Create new Client ID, and select Service account and P12 key.
    - Then click on Create Client ID to download it.
    - key.p12 is used in the get_gapi_data function of this UDT copy it to $root_path/lib/gapi/ to link it correctly
+   - You can use credentials_test.php to test your key.p12 and ga_email settings,
+     if configured ok you see your account settings and ga_profile_id.
+
+   - ! When having problems don't forget to add a new user account under www.google.com/analytics,
+       having read access and as emailaddress ga_email: XXXX@developer.gserviceaccount.com
+
 
 step 3) Login to the /admin area of your website and add a User Defined Tag
         (Extensions -> User Defined Tags) with the name "gapi"
