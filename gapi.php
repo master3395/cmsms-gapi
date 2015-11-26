@@ -1,6 +1,6 @@
 <?php
 
-# (c) 2015 by Arnoud van Susteren (arnoud@frontendstudio.com)
+# (c) 2015 by Arnoud van Susteren (arnoud at nospam frontendstudio dot com)
 # under a GNU General Public License
 
 # README for documentation and howto!

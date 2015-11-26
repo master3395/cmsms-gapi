@@ -1,28 +1,23 @@
 {
     "name": "frontendstudio/gapi",
     "description": "Google Analytics PHP Interface",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "arnoud",
-            "email": "arnoud@frontendstudio.com"
+    "license": "GPL-3.0+",
+    "authors": [{
+        "name": "arnoud",
+        "email": "arnoud at nospam frontendstudio dot com"
+    }],
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "name": "gapi-google-analytics-php-interface",
+            "version": "2.0.1",
+            "source": {
+                "url": "https://github.com/erebusnz/gapi-google-analytics-php-interface.git",
+                "type": "git",
+                "reference": "v2.0.1"
+            }
         }
-    ],
-"repositories": [
-{
-    "type": "package",
-    "package": {
-        "name": "gapi-google-analytics-php-interface", 
-        "version": "2.0.1",
-        "source": {
-            "url": "https://github.com/erebusnz/gapi-google-analytics-php-interface.git",
-            "type": "git",
-            "reference": "v2.0.1" 
-        }
-    }
-}],
-
-
+    }],
     "require": {
         "gapi-google-analytics-php-interface": "2.0.1"
     },
