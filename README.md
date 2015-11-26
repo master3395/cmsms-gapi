@@ -63,7 +63,7 @@ Name: gapi
 Code:
 
  == copy/paste start
-<pre>
+<code>
 global $gCms;
 $config = cmsms()->GetConfig();
 
@@ -71,7 +71,7 @@ $root_path =  $config['root_path'];
 
 $include_class = "$root_path/lib/gapi/gapi.php";
 include($include_class);
-<pre>
+</code>
  == copy/paste end
 
 step 5) Call the gapi UDT by using the correct parameters:
@@ -85,21 +85,21 @@ step 5) Call the gapi UDT by using the correct parameters:
 
 ** Example 1: (default)
 
-<pre>
+<code>
 {gapi ga_profile_id='XXXprofile_id' ga_email='XXXX@developer.gserviceaccount.com'}
-</pre>
+</code>
 
 or
 
-<pre>
+<code>
 {gapi ga_profile_id='XXXprofile_id' ga_email='XXXX@developer.gserviceaccount.com' max_results='10' nocache='0' cache_time='14400' cache_path='tmp/cache'}
-</pre>
+</code>
 
 ** Example 2: (non-default)
 
-<pre>
+<code>
 {gapi ga_profile_id='XXXprofile_id' ga_email='XXXX@developer.gserviceaccount.com' max_results='5' nocache='0' cache_time='600' cache_path='tmp'}
-</pre>
+</code>
 
 step 6) Print out the Smarty data
 
@@ -107,7 +107,7 @@ step 6) Print out the Smarty data
 
  == copy/paste start
 
-<pre>
+<code>
   {$gapi|@print_r}
 
   {if isset($gapi[0]->visits) }
@@ -136,6 +136,6 @@ step 6) Print out the Smarty data
   {else}
      Gapi data unavailable!
   {/if}
-</pre>
+</code>
 
 == copy/paste end
