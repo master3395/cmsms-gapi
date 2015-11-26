@@ -24,13 +24,19 @@ About
    you can adapt the filter properties to suit your own needs:
    https://github.com/erebusnz/gapi-google-analytics-php-interface/blob/wiki/UsingFilterControl.md
 
- * This code has caching support is advisable to set a high cache_time for production websites
+ * This code has caching support it is advisable to set a high cache_time for production websites
 
 =====
 Howto
 =====
 
-step 1) Download gapi.php and gapi.class.php to $root_path/lib/gapi/
+step 1) Under the root of your CMSMS installation create a directory $root_path/lib/gapi
+
+        Either check out this github repository, and install dependencies with composer.
+
+        -- or --
+
+        Download gapi.php and gapi.class.php manually to $root_path/lib/gapi
         ! adjust the require on top of gapi.php to point to gapi.class.php
 
 step 2) Register application under Google Cloud Console and generate a key.p12 authentication file
