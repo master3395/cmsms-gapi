@@ -2,11 +2,11 @@
 Copyrights
 =====
 
-# (c) 2015 by Arnoud van Susteren (arnoud at nospam frontendstudio dot com)
-# under a GNU General Public License
+* (c) 2015 by Arnoud van Susteren (arnoud at nospam frontendstudio dot com)
+* under a GNU General Public License
 
-# The 'gapi.class.php' libary is taken from: https://github.com/erebusnz/gapi-google-analytics-php-interface.git
-# Google Analytic API v3, under the Terms and Conditions of Google
+* The 'gapi.class.php' libary is taken from: https://github.com/erebusnz/gapi-google-analytics-php-interface.git
+* Google Analytic API v3, under the Terms and Conditions of Google
 
 =====
 About
