@@ -62,7 +62,7 @@ step 4) Add the below code (Which is linking to the gapi.class.php and gapi.php 
 Name: gapi
 Code:
 
-## copy/paste start
+ == copy/paste start
 
 global $gCms;
 $config = cmsms()->GetConfig();
@@ -72,7 +72,7 @@ $root_path =  $config['root_path'];
 $include_class = "$root_path/lib/gapi/gapi.php";
 include($include_class);
 
-## copy/paste end
+ == copy/paste end
 
 step 5) Call the gapi UDT by using the correct parameters:
 
