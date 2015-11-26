@@ -26,7 +26,7 @@ $gapi                 = new stdClass();
 $gapi->dimensions     = array('pagePath', 'pageTitle');
 $gapi->metrics        = array('pageviews', 'visits');
 $gapi->sort_metric    = '-visits';
-$gapi->filter         = 'pagePath =~ ^/verslagen/ && pagePath != /verslagen/ && visits > 1';
+$gapi->filter         = 'pagePath =~ ^/news/ && pagePath != /news/ && visits > 1';
 $gapi->start_date     = date('2014-m-d', strtotime("-30 days"));
 $gapi->end_date       = date('2014-m-d', strtotime("-1 days"));
 $gapi->start_index    = 1;
