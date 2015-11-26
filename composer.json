@@ -3,8 +3,7 @@
     "description": "Google Analytics PHP Interface",
     "license": "GPL-3.0+",
     "authors": [{
-        "name": "arnoud",
-        "email": "arnoud at nospam frontendstudio dot com"
+        "name": "arnoud"
     }],
     "repositories": [{
         "type": "package",
