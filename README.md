@@ -39,7 +39,7 @@ step 1) Under the root of your CMSMS installation create a directory $root_path/
         Download gapi.php and gapi.class.php manually to $root_path/lib/gapi
         ! adjust the require on top of gapi.php to point to gapi.class.php
 
-step 2) Register application under Google Cloud Console and generate a key.p12 authentication file
+step 2) Register an Analytics application under Google Cloud Console
 
  * Before you can use this code you should register this application via Google Cloud Console
  * Please go to https://github.com/erebusnz/gapi-google-analytics-php-interface
