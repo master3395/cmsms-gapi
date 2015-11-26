@@ -1,0 +1,6 @@
+*.swp
+*.lock
+backup/*
+tmp/*
+composer_vendor/*
+key.p12
