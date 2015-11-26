@@ -40,7 +40,7 @@ $gapi->ga_email       = isset($params['ga_email']) ? $params['ga_email'] : '';
 $gapi->max_results    = isset($params['max_results']) ? $params['max_results'] : 10;
 
 $nocache              = is_int($params['nocache']) ? $params['nocache'] : 0;
-$cache_time           = isset($params['cache_time']) ? $params['cache_time'] : 600;
+$cache_time           = isset($params['cache_time']) ? $params['cache_time'] : 28800;
 $cache_path           = isset($params['cache_path']) ? $params['cache_path'] : $config['root_path'].DIRECTORY_SEPARATOR.'tmp/cache';
 $cache_filename       = isset($params['cache_filename']) ? $params['cache_filename'] : 'gapi';
 
