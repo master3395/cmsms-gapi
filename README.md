@@ -117,7 +117,7 @@ step 6) Print out the Smarty data
 <pre>
   {$gapi|@print_r}
 
-  {if isset($gapi[0]->visits) }
+  {if isset($gapi->results[0]->visits)}
 
   {foreach from=$gapi->results item='item' name='loop'}
     pagePath: {$item->pagePath}
