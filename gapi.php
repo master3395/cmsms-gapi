@@ -12,7 +12,6 @@
 if(!is_object(cmsms())) exit;
 
 $config     = cmsms()->GetConfig();
-$sub_smarty = cmsms()->GetSmarty();
 
 require dirname(__FILE__) . '/composer_vendor/gapi-google-analytics-php-interface/gapi.class.php';
 
@@ -26,8 +25,8 @@ $gapi                 = new stdClass();
 $gapi->dimensions     = array('pagePath', 'pageTitle');
 $gapi->metrics        = array('pageviews', 'visits');
 $gapi->sort_metric    = '-visits';
-$gapi->filter         = 'pagePath =~ ^/news/ && pagePath != /news/ && visits > 1';
-$gapi->start_date     = date('Y-m-d', strtotime("-30 days"));
+$gapi->filter         = 'pagePath =~ ^/schrijfsels/ && pagePath != /schrijfsels/ && visits > 1';
+$gapi->start_date     = date('Y-m-d', strtotime("-90 days"));
 $gapi->end_date       = date('Y-m-d', strtotime("-1 days"));
 $gapi->start_index    = 1;
 
@@ -105,7 +104,7 @@ if ($debug) {
   print_r($php_data);
 }
 
-$sub_smarty->assign('gapi', $php_data);
+$smarty->assign('gapi', $php_data);
 
 return;
 
@@ -125,7 +124,9 @@ function get_gapi_data($gapi) {
   foreach($ga->getResults() as $result) {
     $obj              = new stdClass();
     $obj->pagePath    = $result->getpagePath();
-    $obj->pageTitle   = $result->getpageTitle();
+    $pageTitleList    = explode('- Studio', $result->getpageTitle());
+    $obj->pageTitle   = $pageTitleList[0];
+
     $resultList       = explode('/', $result->getpagePath());
     $obj->pageId      = $resultList[2];
     $obj->pageViews   = $result->getPageviews();
